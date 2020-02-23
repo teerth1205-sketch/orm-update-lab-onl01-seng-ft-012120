@@ -52,8 +52,10 @@ def self.new_from_db(row)
  def self.find_by_name(names)
    sql = "SELECT * FROM students WHERE name = ?"
    
+  DB[:conn].execute(sql, names).map |row|
+  Student.new_from_db(row)
+  end.first 
   
-   Student.new_from_db(DB[:conn].execute(sql, names))
    
 end     
   
