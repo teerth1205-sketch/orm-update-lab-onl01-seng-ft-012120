@@ -57,7 +57,5 @@ def self.new_from_db(row)
   end.first 
   
    
-end     
-  
-end 
+ end     
 end 
