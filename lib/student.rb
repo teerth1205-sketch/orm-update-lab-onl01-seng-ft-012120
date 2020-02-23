@@ -53,8 +53,8 @@ def self.new_from_db(row)
    sql = "SELECT * FROM students WHERE name = ?"
    
   
-  name = Student.new_from_db(DB[:conn].execute(sql, names))
-   name 
+   Student.new_from_db(DB[:conn].execute(sql, names))
+   
 end     
   
 end
