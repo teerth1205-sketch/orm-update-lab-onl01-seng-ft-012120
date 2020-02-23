@@ -59,7 +59,7 @@ def self.new_from_db(row)
  end     
  
  def update
-   sql 
+   sql = "UPDATE "
    
  end 
 end 
